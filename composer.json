@@ -1,0 +1,7 @@
+{
+    "require": {
+        "gomoob/php-pushwoosh": "~1.0",
+        "phpoffice/phpspreadsheet": "^1.4",
+        "endroid/qr-code": "^3.9"
+    }
+}

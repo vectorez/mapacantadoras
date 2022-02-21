@@ -1,0 +1,3318 @@
+dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none
+}
+
+:focus,button:hover {
+    outline: 0
+}
+
+ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+main {
+    display: block
+}
+
+img {
+    display: block
+}
+
+button,input[type=submit] {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    font-size: 1em;
+    font-family: inherit;
+    color: inherit
+}
+
+button:active,button:focus,button:hover,input[type=submit]:active,input[type=submit]:focus {
+    outline: 0
+}
+
+*,:before,:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased!important;
+    -webkit-tap-highlight-color: transparent
+}
+
+::-ms-clear {
+    display: none
+}
+
+a {
+    cursor: pointer
+}
+
+svg {
+    overflow: visible
+}
+
+@media print {
+    button,header,form {
+        display: none!important
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0
+    }
+
+    80% {
+        opacity: 1
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-5%)
+    }
+
+    50% {
+        transform: translateX(5%)
+    }
+}
+
+@font-face {
+    font-family: bebas;
+    src: url("../fonts/BebasNeue Book.woff") format("woff")
+}
+
+@font-face {
+    font-family: playfair;
+    src: url(../fonts/PlayfairDisplay-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: inconsolata;
+    src: url(../fonts/inconsolata.woff) format("woff")
+}
+
+::selection {
+    color: #fff;
+    background: #ee3124
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #ee3124
+}
+
+html {
+    font-size: 100%;
+    line-height: 1;
+    color: #fff;
+    font-family: bebas,sans-serif
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff
+}
+
+em {
+    font-style: italic
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    stroke: currentColor;
+    overflow: visible
+}
+
+.page-home .video-container,#map,#map .ocean-layer,#map .land-layer,#map .marker-layer,#map .objects-layer {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%
+}
+
+gsap-control {
+    position: fixed;
+    z-index: 100;
+    bottom: 20%;
+    left: 50px;
+    width: 400px
+}
+
+gsap-control rz-slider {
+    position: relative;
+    z-index: 100;
+    display: block;
+    margin: auto
+}
+
+gsap-control .controls {
+    position: relative;
+    z-index: 100;
+    clear: both;
+    margin-top: 20px
+}
+
+/*! angularjs-slider - v2.10.2 - 
+ (c) Rafal Zajac <rzajac@gmail.com>, Valentin Hervieu <valentin@hervieu.me>, Jussi Saarivirta <jusasi@gmail.com>, Angelin Sirbu <angelin.sirbu@gmail.com> - 
+ https://github.com/angular-slider/angularjs-slider - 
+ 2016-03-01 */
+rzslider {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    margin: 35px 0 15px;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+rzslider[disabled] {
+    cursor: not-allowed
+}
+
+rzslider[disabled] .rz-pointer {
+    cursor: not-allowed;
+    background-color: #d8e0f3
+}
+
+rzslider span {
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap
+}
+
+rzslider .rz-base {
+    width: 100%;
+    height: 100%;
+    padding: 0
+}
+
+rzslider .rz-bar-wrapper {
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 32px;
+    padding-top: 16px;
+    margin-top: -16px;
+    box-sizing: border-box
+}
+
+rzslider .rz-bar-wrapper.rz-draggable {
+    cursor: move
+}
+
+rzslider .rz-bar {
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 4px;
+    background: #d8e0f3;
+    border-radius: 2px
+}
+
+rzslider .rz-bar.rz-selection {
+    z-index: 2;
+    background: #0db9f0;
+    border-radius: 2px
+}
+
+rzslider .rz-pointer {
+    top: -14px;
+    z-index: 3;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-color: #0db9f0;
+    border-radius: 16px
+}
+
+rzslider .rz-pointer:after {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 4px;
+    content: ''
+}
+
+rzslider .rz-pointer:hover:after {
+    background-color: #fff
+}
+
+rzslider .rz-pointer.rz-active {
+    z-index: 4
+}
+
+rzslider .rz-pointer.rz-active:after {
+    background-color: #451aff
+}
+
+rzslider .rz-bubble {
+    bottom: 16px;
+    padding: 1px 3px;
+    color: #55637d;
+    cursor: default
+}
+
+rzslider .rz-bubble.rz-selection {
+    top: 16px
+}
+
+rzslider .rz-bubble.rz-limit {
+    color: #55637d
+}
+
+rzslider .rz-ticks {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 0 11px;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+rzslider .rz-ticks .tick {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    cursor: pointer;
+    background: #d8e0f3;
+    border-radius: 50%
+}
+
+rzslider .rz-ticks .tick.selected {
+    background: #0db9f0
+}
+
+rzslider .rz-ticks .tick .tick-value {
+    position: absolute;
+    top: -30px;
+    -ms-transform: translate(-50%,0);
+    transform: translate(-50%,0)
+}
+
+rzslider.vertical {
+    position: relative;
+    width: 4px;
+    height: 100%;
+    padding: 0;
+    margin: 0 20px;
+    vertical-align: baseline
+}
+
+rzslider.vertical .rz-base {
+    width: 100%;
+    height: 100%;
+    padding: 0
+}
+
+rzslider.vertical .rz-bar-wrapper {
+    top: auto;
+    left: 0;
+    width: 32px;
+    height: 100%;
+    padding: 0 0 0 16px;
+    margin: 0 0 0 -16px
+}
+
+rzslider.vertical .rz-bar {
+    bottom: 0;
+    left: auto;
+    width: 4px;
+    height: 100%
+}
+
+rzslider.vertical .rz-pointer {
+    top: auto;
+    bottom: 0;
+    left: -14px!important
+}
+
+rzslider.vertical .rz-bubble {
+    bottom: 0;
+    left: 16px!important;
+    margin-left: 3px
+}
+
+rzslider.vertical .rz-bubble.rz-selection {
+    top: auto;
+    left: 16px!important
+}
+
+rzslider.vertical .rz-ticks {
+    top: 0;
+    left: -3px;
+    z-index: 1;
+    width: 0;
+    height: 100%;
+    padding: 11px 0;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
+}
+
+rzslider.vertical .rz-ticks .tick {
+    vertical-align: middle
+}
+
+rzslider.vertical .rz-ticks .tick .tick-value {
+    top: auto;
+    right: -30px;
+    -ms-transform: translate(0,-28%);
+    transform: translate(0,-28%)
+}
+
+.button,.xbtn1,buttonx {
+    position: relative;
+    font-family: bebas,sans-serif;
+    letter-spacing: .275em;
+    font-weight: 400;
+    font-size: 1.25rem;
+    display: block;
+    padding: .6em;
+    color: #fff;
+    text-indent: 0;
+    cursor: pointer
+}
+
+.button .icon,.xbtn .icon,button .icon {
+    display: inline-block;
+    margin-right: .75em
+}
+
+.button .content,.xbtn .content,button .content {
+    position: relative;
+    z-index: 3;
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.button .bg-animation,.xbtn .bg-animation,button .bg-animation {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: background-color .35s cubic-bezier(.39,.575,.565,1);
+    background-image: url(../img/general/button_texture.png);
+    transition: transform .35s cubic-bezier(.39,.575,.565,1);
+    box-shadow: 0 0 35px rgba(0,0,0,.3)
+}
+
+.country-all .button .bg-animation,.country-all .xbtn .bg-animation,.country-all button .bg-animation {
+    background-color: #ee3124
+}
+
+.button .bg-animation.country-all,.xbtn .bg-animation.country-all,button .bg-animation.country-all {
+    background-color: #ee3124!important
+}
+
+.country-myanmar .button .bg-animation,.country-myanmar .xbtn .bg-animation,.country-myanmar button .bg-animation {
+    background-color: #f6a741
+}
+
+.button .bg-animation.country-myanmar,.xbtn .bg-animation.country-myanmar,button .bg-animation.country-myanmar {
+    background-color: #f6a741!important
+}
+
+.country-vietnam .button .bg-animation,.country-vietnam .xbtn .bg-animation,.country-vietnam button .bg-animation {
+    background-color: #ec7cae
+}
+
+.button .bg-animation.country-vietnam,.xbtn .bg-animation.country-vietnam,button .bg-animation.country-vietnam {
+    background-color: #ec7cae!important
+}
+
+.button .click-animation,.xbtn .click-animation,button .click-animation {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden
+}
+
+.button .click-animation>div,.xbtn .click-animation>div,button .click-animation>div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    display: block;
+    width: 10em;
+    height: 10em;
+    background: rgba(255,255,255,.2);
+    border-radius: 50%;
+    opacity: 0
+}
+
+@media screen and (min-width: 1000px) {
+    .button,.xbtn1,buttonx {
+        font-size:1.25rem
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .button,.xbtn1,buttonx {
+        padding:.8em .6em
+    }
+
+    .button:hover .content,.xbtn:hover .content,button:hover .content {
+        letter-spacing: .35em
+    }
+
+    header .button:hover .content,header .xbtn:hover .content,header button:hover .content {
+        -ms-transform: translateY(.075em);
+        transform: translateY(.075em)
+    }
+
+    footer .button:hover .content,footer .xbtn:hover .content,footer button:hover .content {
+        -ms-transform: translateY(-.075em);
+        transform: translateY(-.075em)
+    }
+
+    .button:hover .bg-animation,.xbtn:hover .bg-animation,button:hover .bg-animation {
+        -ms-transform: scale(1.075);
+        transform: scale(1.075)
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .button,.xbtn1,buttonx {
+        font-size:1.5rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .button,.xbtn1,buttonx {
+        font-size:1.5625rem;
+        padding: .9em .75em
+    }
+}
+
+.debug {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    z-index: 100;
+    padding: 1em;
+    border: 1px solid #fff;
+    background: rgba(0,0,0,.5)
+}
+
+.debug:before {
+    content: 'Debug Info';
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 1em
+}
+
+.debug #mini-map {
+    width: 200px;
+    height: 200px
+}
+
+@media screen and (min-width: 1200px) {
+    .debug {
+        display:block
+    }
+}
+
+.social-share embed-modal {
+    display: block;
+    position: absolute;
+    right: -5%;
+    top: 100%;
+    z-index: 2;
+    font-size: 25rem;
+    width: 1em;
+    height: .61em;
+    padding: 3.125rem 4.375rem 3.125rem 3.125rem;
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: translateX(100%);
+    transform: translateX(100%)
+}
+
+.social-share embed-modal .embed-modal {
+    width: 100%;
+    height: 100%
+}
+
+.social-share embed-modal .close-buttonx {
+    position: absolute;
+    right: 3.2em;
+    top: 3.2em;
+    font-size: .875rem;
+    transition: color .35s cubic-bezier(.39,.575,.565,1)
+}
+
+.country-all .social-share embed-modal .close-button:hover {
+    color: #ee3124
+}
+
+.country-myanmar .social-share embed-modal .close-button:hover {
+    color: #f6a741
+}
+
+.country-vietnam .social-share embed-modal .close-button:hover {
+    color: #ec7cae
+}
+
+.social-share embed-modal .close-button .icon {
+    transition: fill .35s cubic-bezier(.39,.575,.565,1);
+    fill: #b5b5b5;
+    stroke: none
+}
+
+.country-all .social-share embed-modal .close-button .icon:hover {
+    fill: #ee3124
+}
+
+.country-myanmar .social-share embed-modal .close-button .icon:hover {
+    fill: #f6a741
+}
+
+.country-vietnam .social-share embed-modal .close-button .icon:hover {
+    fill: #ec7cae
+}
+
+.social-share embed-modal .embed-title {
+    font-size: 1.25rem;
+    text-transform: none;
+    letter-spacing: .015em;
+    text-indent: 0;
+    line-height: 1.25;
+    margin-bottom: .8em
+}
+
+.social-share embed-modal textarea {
+    display: block;
+    width: calc(100% + 1.5em);
+    height: 6.25em;
+    padding: 1em;
+    font-family: inconsolata;
+    font-size: .9375rem;
+    color: #8a8a8a;
+    border: none;
+    background: white;
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,.15);
+    white-space: pre;
+    overflow: hidden
+}
+
+@media screen and (min-width: 1000px) {
+    .social-share embed-modal {
+        background:url(../img/general/embed_bg.png) no-repeat 50% 50%/cover
+    }
+}
+
+.iat-app explore-prompt {
+    font-family: bebas,sans-serif;
+    letter-spacing: .275em;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.6875rem;
+    text-align: center;
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    position: fixed;
+    z-index: 5;
+    transition: .35s cubic-bezier(.215,.61,.355,1);
+    overflow: visible;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.iat-app explore-prompt .text {
+    color: #fff;
+    text-shadow: 0 0 25px rgba(0,0,0,.95)
+}
+
+.iat-app explore-prompt.ng-hide {
+    display: block!important;
+    opacity: 0
+}
+
+.iat-app explore-prompt .icon {
+    display: block;
+    width: 5em;
+    height: 5em;
+    stroke: none;
+    fill: #fff;
+    margin: 0 auto 1em;
+    overflow: visible;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.iat-app explore-prompt .icon g,.iat-app explore-prompt .icon path {
+    display: block;
+    transform: translateZ(0);
+    overflow: visible;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+page-loader {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 46;
+    background: #fff url(../img/general/paper_bg.jpg) repeat-y 0 0/100% auto
+}
+
+page-loader:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .4;
+    background: url(../img/general/map_texture_small.png) no-repeat 50% 0/100% auto
+}
+
+@media screen and (min-width: 1000px) {
+    page-loader:before {
+        background-image:url(../img/general/map_texture.png)
+    }
+}
+
+page-loader .page-loader {
+    height: 100%
+}
+
+page-loader .page-loader-content {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+page-loader .page-loader-content .page-loader-content-animation {
+    position: relative;
+    font-size: 8.75rem;
+    width: 1em;
+    height: 1em
+}
+
+page-loader .page-loader-content .page-loader-content-animation .animation-wrapper {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%
+}
+
+page-loader .page-loader-content .page-loader-content-animation .animation-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 100%
+}
+
+page-loader .page-loader-content .page-loader-content-animation .animation-container .animation-image,page-loader .page-loader-content .page-loader-content-animation .animation-container .animation-image-static {
+    position: absolute;
+    width: 100%;
+    height: auto
+}
+
+@media screen and (min-width: 1200px) {
+    page-loader .page-loader-content .page-loader-content-animation {
+        background:none
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    page-loader .page-loader-content .page-loader-content-animation {
+        font-size:15rem
+    }
+}
+
+page-loader .page-loader-content .page-loader-text {
+    font-family: bebas,sans-serif;
+    letter-spacing: .275em;
+    font-weight: 400;
+    color: #8a8a8a;
+    font-size: 1.5625rem;
+    margin-top: .75em
+}
+
+@media screen and (min-width: 1000px) {
+    page-loader .page-loader-content .page-loader-text {
+        font-size:1.875rem
+    }
+}
+
+scrub-loader {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 45;
+    opacity: 0;
+    visibility: hidden
+}
+
+scrub-loader .scrub-loader-map {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background: url(../img/general/map_texture_small.png) no-repeat 50% 0/cover
+}
+
+@media screen and (min-width: 1000px) {
+    scrub-loader .scrub-loader-map {
+        background-image:url(../img/general/map_texture.png)
+    }
+}
+
+scrub-loader .scrub-loader {
+    height: 100%
+}
+
+scrub-loader .animation-row {
+    position: relative;
+    overflow: hidden;
+    height: 65%
+}
+
+scrub-loader .animation-row:nth-child(1) {
+    transform: translate3d(0,-15%,0)
+}
+
+scrub-loader .animation-row:nth-child(2) {
+    transform: translate3d(0,-45%,0)
+}
+
+@media screen and (min-width: 1000px) {
+    scrub-loader .animation-row {
+        background:url(../animations/scrub.png) no-repeat 50% 0/auto 2200%
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:999px) {
+    scrub-loader {
+        background:url(../img/general/paper_bg.jpg) repeat-y 0 0/100% auto
+    }
+}
+
+footprint-loader {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 45;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 6.875rem;
+    background: #fff url(../img/general/paper_bg.jpg) repeat-y 0 0/100% auto
+}
+
+footprint-loader:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .4;
+    background: url(../img/general/map_texture_small.png) no-repeat 50% 0/100% auto
+}
+
+@media screen and (min-width: 1000px) {
+    footprint-loader:before {
+        background-image:url(../img/general/map_texture.png)
+    }
+}
+
+footprint-loader .footprint-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0)
+}
+
+footprint-loader .footprint-pair {
+    perspective: 750px
+}
+
+footprint-loader .footprint {
+    width: 1em;
+    height: 1em;
+    opacity: 0;
+    fill: #8a8a8a
+}
+
+footprint-loader .footprint.footprint-left {
+    -ms-transform: translate(20%,20%);
+    transform: translate(20%,20%)
+}
+
+footprint-loader .footprint.footprint-right {
+    -ms-transform: translate(-20%,-20%);
+    transform: translate(-20%,-20%)
+}
+
+footprint-loader .footprint-loader-text {
+    font-family: bebas,sans-serif;
+    letter-spacing: .275em;
+    font-weight: 400;
+    color: #8a8a8a;
+    text-align: center;
+    font-size: .25em;
+    letter-spacing: .1em;
+    margin-top: 2em;
+    transform: translateZ(0)
+}
+
+.iat-app.ng-animate {
+    pointer-events: none
+}
+
+plan-trip {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 35%;
+    z-index: 2;
+    font-size: 20.625rem;
+    width: 1em;
+    height: 1.1em;
+    padding: 2rem;
+    background: url(../img/general/plan_trip_bg.png) no-repeat 50% 50%/cover;
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: translateX(100%);
+    transform: translateX(100%)
+}
+
+plan-trip .close-buttonx {
+    position: absolute;
+    right: 1.8em;
+    top: 2.3em;
+    font-size: .875rem;
+    transition: color .35s cubic-bezier(.39,.575,.565,1)
+}
+
+.country-all plan-trip .close-button:hover {
+    color: #ee3124
+}
+
+.country-myanmar plan-trip .close-button:hover {
+    color: #f6a741
+}
+
+.country-vietnam plan-trip .close-button:hover {
+    color: #ec7cae
+}
+
+plan-trip .close-button .icon {
+    transition: fill .35s cubic-bezier(.39,.575,.565,1);
+    fill: #b5b5b5;
+    stroke: none
+}
+
+.country-all plan-trip .close-button .icon:hover {
+    fill: #ee3124
+}
+
+.country-myanmar plan-trip .close-button .icon:hover {
+    fill: #f6a741
+}
+
+.country-vietnam plan-trip .close-button .icon:hover {
+    fill: #ec7cae
+}
+
+plan-trip .step-inside-logo {
+    position: relative;
+    display: none;
+    font-size: 6.875rem;
+    width: 1em;
+    height: .55em;
+    margin: auto
+}
+
+@media screen and (min-width: 750px) {
+    plan-trip .step-inside-logo {
+        display:block
+    }
+
+    plan-trip .step-inside-logo svg {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        left: 500%
+    }
+
+    .country-all plan-trip .step-inside-logo svg.show-if-all,.country-myanmar plan-trip .step-inside-logo svg.show-if-myanmar,.country-vietnam plan-trip .step-inside-logo svg.show-if-vietnam {
+        left: 0
+    }
+}
+
+plan-trip .text {
+    text-align: center
+}
+
+plan-trip .text p {
+    margin: .8em 0;
+    font-weight: 400;
+    letter-spacing: .025em;
+    font-size: .9375rem;
+    font-style: italic;
+    line-height: 1.35;
+    color: #8a8a8a
+}
+
+@media screen and (min-width: 350px) {
+    plan-trip .text p {
+        font-size:1rem
+    }
+}
+
+plan-trip .contact-list {
+    display: block;
+    margin: 1.25rem 0 0 2.5%
+}
+
+plan-trip .contact-list li {
+    margin: .7em 0;
+    letter-spacing: .15em;
+    font-size: .9375rem;
+    font-weight: 700;
+    color: #8a8a8a;
+    white-space: nowrap
+}
+
+plan-trip .contact-list li .icon {
+    margin-right: .35em;
+    font-size: 1.5em;
+    opacity: .85
+}
+
+plan-trip .contact-list li a {
+    color: currentColor;
+    transition: color .35s cubic-bezier(.39,.575,.565,1)
+}
+
+.country-all plan-trip .contact-list li a:hover {
+    color: #ee3124
+}
+
+.country-myanmar plan-trip .contact-list li a:hover {
+    color: #f6a741
+}
+
+.country-vietnam plan-trip .contact-list li a:hover {
+    color: #ec7cae
+}
+
+@media screen and (min-width: 350px) {
+    plan-trip .contact-list li {
+        font-size:1rem
+    }
+}
+
+@media screen and (min-width: 350px) {
+    plan-trip {
+        font-size:21.875rem
+    }
+}
+
+@media screen and (min-width: 750px) {
+    plan-trip {
+        font-size:25rem
+    }
+
+    plan-trip .contact-list {
+        margin-left: 7%
+    }
+}
+
+plan-trip-buttonx {
+    position: absolute;
+    z-index: 1;
+    right: 1.875rem;
+    bottom: .4375rem;
+    font-weight: 700;
+    font-size: 1rem
+}
+
+plan-trip-button a {
+    color: #8a8a8a;
+    transition: color .35s cubic-bezier(.39,.575,.565,1)
+}
+
+.country-all plan-trip-button a:hover {
+    color: #ee3124
+}
+
+.country-myanmar plan-trip-button a:hover {
+    color: #f6a741
+}
+
+.country-vietnam plan-trip-button a:hover {
+    color: #ec7cae
+}
+
+plan-trip-button .text {
+    display: none
+}
+
+plan-trip-button .country-icon {
+    display: none;
+    position: relative;
+    top: .25em;
+    font-size: 2em;
+    height: 1em;
+    width: 1.8em;
+    margin-left: .25em
+}
+
+@media screen and (min-width: 1200px) {
+    plan-trip-button .country-icon {
+        display:inline-block
+    }
+
+    plan-trip-button .country-icon svg {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        left: 500%
+    }
+
+    .country-all plan-trip-button .country-icon svg.show-if-all,.country-myanmar plan-trip-button .country-icon svg.show-if-myanmar,.country-vietnam plan-trip-button .country-icon svg.show-if-vietnam {
+        left: 0
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    plan-trip-buttonx {
+        bottom:.5625rem;
+        font-size: 1.125rem
+    }
+
+    plan-trip-button .text {
+        display: inline
+    }
+
+    plan-trip-button .icon {
+        display: inline-block;
+        margin-right: .6em
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    plan-trip-buttonx {
+        bottom:.75rem;
+        font-size: 1.3125rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    plan-trip-buttonx {
+        bottom:1.125rem
+    }
+}
+
+.page-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 50;
+    width: 100%;
+    height: 4.0625rem;
+    font-family: bebas,sans-serif;
+    letter-spacing: .275em;
+    font-weight: 400;
+    color: #8a8a8a;
+    background: url(../img/general/bottompaper_sml.png) no-repeat 0 0/auto 100%;
+    opacity: 0;
+    visibility: hidden
+}
+
+.page-footer background-audio-mute {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 1.5625rem;
+    bottom: .125rem;
+    fill: #8a8a8a;
+    font-size: 1.6875rem;
+    width: 1em;
+    height: 1em;
+    cursor: pointer
+}
+
+.page-footer background-audio-mute #background-mute-line {
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    opacity: 0
+}
+
+.page-footer background-audio-mute #background-mute-sound_waves {
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    opacity: 1
+}
+
+.page-footer background-audio-mute:hover #background-mute-line {
+    opacity: .3
+}
+
+.page-footer background-audio-mute:hover #background-mute-sound_waves {
+    opacity: 1
+}
+
+.page-footer background-audio-mute.muted #background-mute-line {
+    opacity: 1
+}
+
+.page-footer background-audio-mute.muted #background-mute-sound_waves {
+    opacity: 0
+}
+
+.page-footer background-audio-mute.muted:hover #background-mute-line {
+    opacity: 1
+}
+
+.page-footer background-audio-mute.muted:hover #background-mute-sound_waves {
+    opacity: .3
+}
+
+@media screen and (min-width: 1200px) {
+    .page-footer background-audio-mute {
+        display:block
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .page-footer background-audio-mute {
+        bottom:.4375rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .page-footer background-audio-mute {
+        bottom:.75rem
+    }
+}
+
+.page-footer .credit {
+    position: absolute;
+    z-index: 1;
+    left: 1.875rem;
+    bottom: .4375rem;
+    color: #b5b5b5;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    transition: color .35s cubic-bezier(.39,.575,.565,1)
+}
+
+.country-all .page-footer .credit:hover {
+    color: #ee3124
+}
+
+.country-myanmar .page-footer .credit:hover {
+    color: #f6a741
+}
+
+.country-vietnam .page-footer .credit:hover {
+    color: #ec7cae
+}
+
+.page-footer .credit .text {
+    display: none
+}
+
+@media screen and (min-width: 1000px) {
+    .page-footer .credit {
+        bottom:.5625rem
+    }
+
+    .page-footer .credit .text {
+        display: inline
+    }
+
+    .page-footer .credit .icon {
+        display: none
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-footer .credit {
+        left:4.375rem
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .page-footer .credit {
+        bottom:.75rem;
+        font-size: 1.125rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .page-footer .credit {
+        bottom:1.125rem
+    }
+}
+
+.page-footer random-location {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    transition: opacity .35s cubic-bezier(.39,.575,.565,1);
+    -ms-transform: translate(-50%,100%);
+    transform: translate(-50%,100%);
+    opacity: 0;
+    visibility: hidden
+}
+
+.page-footer random-location .bg-animation {
+    background-color: #ee3124
+}
+
+.page-footer random-location .icon {
+    position: relative;
+    top: -.05em;
+    width: 1.2em;
+    height: 1.2em;
+    background: url(../img/general/dice.png) no-repeat 50% 50%/contain;
+    -ms-transform-origin: 50% 25%;
+    transform-origin: 50% 25%
+}
+
+.menu-open .page-footer random-location {
+    pointer-events: none;
+    opacity: 0!important
+}
+
+.page-footer random-location.loading {
+    pointer-events: none
+}
+
+@media screen and (min-width: 750px) {
+    .page-footer {
+        height:4.6875rem
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .page-footer {
+        height:0;
+        padding-bottom: 6.796875%;
+        background: none
+    }
+
+    .page-footer:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: url(../img/general/bottompaper.png) no-repeat 0 0/cover
+    }
+}
+
+.page-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 4.6875rem;
+    font-family: bebas,sans-serif;
+    letter-spacing: .275em;
+    font-weight: 400;
+    background: url(../img/general/toppaper_sml.png) no-repeat 0 0/auto 100%;
+    opacity: 0;
+    visibility: hidden
+}
+
+.page-header logo {
+    display: inline-block;
+    position: relative;
+    left: 1.875rem;
+    top: 0;
+    z-index: 2
+}
+
+@media screen and (min-width: 1400px) {
+    .page-header logo {
+        top:.3125rem
+    }
+}
+
+.page-header logo a {
+    position: relative;
+    display: inline-block
+}
+
+.page-header logo a:hover {
+    fill: #ee3124
+}
+
+.page-header logo svg {
+    display: block;
+    width: 4.25rem;
+    height: 2.3125rem;
+    left: 0;
+    top: 0
+}
+
+@media screen and (min-width: 750px) {
+    .page-header logo svg {
+        width:5rem;
+        height: 2.375rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .page-header logo svg {
+        width:5.625rem;
+        height: 3rem
+    }
+}
+
+.page-header .social-share {
+    display: none;
+    position: absolute;
+    right: .9375rem;
+    top: 25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2
+}
+
+@media screen and (min-width: 1000px) {
+    .page-header .social-share {
+        display:-ms-flexbox;
+        display: flex
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .page-header .social-share {
+        right:1.25rem
+    }
+}
+
+.page-header back-to-map {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 0;
+    -ms-transform: translate(-50%,-100%);
+    transform: translate(-50%,-100%);
+    opacity: 0;
+    visibility: hidden
+}
+
+@media screen and (min-width: 350px) {
+    .page-header {
+        height:5.625rem
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-header {
+        height:0;
+        padding-bottom: 7.4609375%;
+        background: none
+    }
+
+    .page-header:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: url(../img/general/toppaper.png) no-repeat 0 0/cover
+    }
+}
+
+.social-share {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.125rem
+}
+
+.social-share li {
+    color: #8a8a8a;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-indent: .15em
+}
+
+.social-share li:first-child {
+    margin-right: .5em
+}
+
+.social-share li>a {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 2.2em;
+    height: 2.4em
+}
+
+.social-share li>a:before {
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat
+}
+
+.social-share li>a:hover:before {
+    opacity: 1
+}
+
+.social-share li>a:hover svg {
+    fill: #fff!important
+}
+
+.no-flexbox .social-share li>a {
+    position: relative
+}
+
+.no-flexbox .social-share li>a>* {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0)
+}
+
+.social-share svg {
+    position: relative;
+    left: .1em;
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    width: .9em;
+    height: .9em;
+    fill: #8a8a8a
+}
+
+.social-share embed-buttonx {
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    position: relative;
+    cursor: pointer;
+    color: #8a8a8a;
+    padding: 1em 1.4em;
+    right: -.5em
+}
+
+.social-share embed-button .icon {
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    margin-right: .5em;
+    font-size: 1.35em;
+    stroke: none;
+    fill: #8a8a8a
+}
+
+.social-share embed-button:before {
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    opacity: 0;
+    visibility: hidden;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain
+}
+
+.country-all .social-share embed-button:before {
+    background-image: url(../img/general/japan/embed_hover.png)
+}
+
+.country-myanmar .social-share embed-button:before {
+    background-image: url(../img/general/myanmar/embed_hover.png)
+}
+
+.country-vietnam .social-share embed-button:before {
+    background-image: url(../img/general/vietnam/embed_hover.png)
+}
+
+.social-share embed-button:hover {
+    color: #fff
+}
+
+.social-share embed-button:hover .icon {
+    fill: #fff
+}
+
+.social-share embed-button:hover:before {
+    opacity: 1;
+    visibility: visible
+}
+
+.social-share .twitter:before {
+    background-image: url(../img/general/twitterbg.png)
+}
+
+.social-share .twitter svg {
+    fill: #4099ff
+}
+
+.social-share .facebook:before {
+    background-image: url(../img/general/facebookbg.png)
+}
+
+.social-share .facebook svg {
+    fill: #3b5999
+}
+
+.social-share .pinterest:before {
+    background-image: url(../img/general/pinterestbg.png)
+}
+
+.social-share .pinterest svg {
+    fill: #cb2027
+}
+
+.no-flexbox .social-share li {
+    display: inline-block
+}
+
+@media screen and (min-width: 1200px) {
+    .social-share {
+        font-size:1.1875rem
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .social-share {
+        font-size:1.3125rem
+    }
+}
+
+html,body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+html .iat-app+#cloned-content,body .iat-app+#cloned-content {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 2
+}
+
+html .iat-app,html .iat-app>div,body .iat-app,body .iat-app>div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+#svg-sprite {
+    position: absolute;
+    width: 0;
+    height: 0
+}
+
+.unsupported {
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    color: #fff;
+    background: #c00;
+    width: 100%;
+    text-align: center;
+    padding: 1.25rem;
+    margin-bottom: 0
+}
+
+menu-toggle {
+    position: absolute;
+    right: -.75rem;
+    top: .75rem;
+    z-index: 1;
+    display: block;
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: .8125rem;
+    -ms-transform: translate(-50%,-100%);
+    transform: translate(-50%,-100%);
+    opacity: 0;
+    visibility: hidden
+}
+
+menu-toggle .menu-toggle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-family: bebas,sans-serif;
+    letter-spacing: .275em;
+    font-weight: 400;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-indent: 0
+}
+
+menu-toggle .menu-toggle .lines {
+    position: relative;
+    width: 1.65em;
+    height: 1.65em;
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    transform: translateZ(0)
+}
+
+menu-toggle .menu-toggle .lines span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%
+}
+
+menu-toggle .menu-toggle .lines .line-1 {
+    background: url(../img/general/menu_top_bottom_icon.png) no-repeat 0 20%/100% auto
+}
+
+menu-toggle .menu-toggle .lines .line-2 {
+    background: url(../img/general/menu_middle.png) no-repeat 0 50%/85% auto
+}
+
+menu-toggle .menu-toggle .lines .line-3 {
+    background: url(../img/general/menu_top_bottom_icon.png) no-repeat 0 80%/100% auto
+}
+
+menu-toggle .menu-toggle .text {
+    display: none;
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    transform: translateZ(0)
+}
+
+@media screen and (min-width: 1000px) {
+    menu-toggle .menu-toggle .text {
+        display:block;
+        margin-left: 1em
+    }
+}
+
+menu-toggle .menu-toggle:before {
+    content: '';
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    z-index: -1;
+    background-color: #ee3124;
+    background-image: url(../img/general/button_texture.png);
+    transition: .35s cubic-bezier(.39,.575,.565,1);
+    box-shadow: 0 0 35px rgba(0,0,0,.3)
+}
+
+menu-toggle .menu-toggle .click-animation {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden
+}
+
+menu-toggle .menu-toggle .click-animation>div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    display: block;
+    width: 10em;
+    height: 10em;
+    background: rgba(255,255,255,.2);
+    border-radius: 50%;
+    opacity: 0
+}
+
+.no-flexbox menu-toggle .menu-toggle {
+    zoom:1;display: block;
+    text-align: center;
+    padding-top: .75em
+}
+
+.no-flexbox menu-toggle .menu-toggle:before,.no-flexbox menu-toggle .menu-toggle:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden
+}
+
+.no-flexbox menu-toggle .menu-toggle:after {
+    clear: both
+}
+
+.no-flexbox menu-toggle .menu-toggle .lines,.no-flexbox menu-toggle .menu-toggle .text {
+    display: inline-block;
+    vertical-align: middle
+}
+
+@media screen and (min-width: 750px) {
+    menu-toggle {
+        width:4.0625rem;
+        height: 4.0625rem;
+        font-size: 1rem
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    menu-toggle {
+        right:auto;
+        left: 50%;
+        top: 0;
+        width: 17.8125rem;
+        height: 3.4375rem;
+        font-size: 1.25rem
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    menu-toggle {
+        padding-bottom:4%;
+        height: 0
+    }
+
+    menu-toggle .menu-toggle:hover .lines,menu-toggle .menu-toggle:hover .text {
+        letter-spacing: .35em;
+        -ms-transform: translateY(.075em);
+        transform: translateY(.075em)
+    }
+
+    menu-toggle .menu-toggle:hover:before {
+        -ms-transform: translate(-50%,-50%) scale(1.075);
+        transform: translate(-50%,-50%) scale(1.075)
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    menu-toggle {
+        width:19.6875rem;
+        font-size: 1.375rem
+    }
+}
+
+main-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 46;
+    padding: 5% 0 3.5%;
+    opacity: 0;
+    visibility: hidden
+}
+
+main-menu .main-menu {
+    height: 100%;
+    width: 100%
+}
+
+main-menu .main-menu .menu {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto
+}
+
+main-menu .main-menu .menu li {
+    height: 90%;
+    width: 33.3333333333%;
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: scale(.4);
+    transform: scale(.4)
+}
+
+main-menu .main-menu .menu li a {
+    position: relative;
+    display: block;
+    height: 100%
+}
+
+main-menu .main-menu .menu .menu-item-map {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+
+main-menu .main-menu .menu .menu-item-map svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    fill: #8a8a8a;
+    opacity: .5
+}
+
+main-menu .main-menu .menu .menu-item-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate3d(-50%,-50%,0)
+}
+
+main-menu .main-menu .menu hgroup {
+    display: inline-block;
+    color: #fff
+}
+
+@media screen and (min-width: 1000px) {
+    main-menu .main-menu .menu hgroup {
+        top:35%
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main-menu .main-menu .menu hgroup {
+        top:45%
+    }
+}
+
+main-menu .main-menu .menu .menu-title {
+    display: inline;
+    position: relative;
+    z-index: 2;
+    font-size: 1.875rem;
+    white-space: nowrap
+}
+
+main-menu .main-menu .menu .menu-title:before {
+    content: '';
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    width: 150%;
+    height: 140%;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: .35s cubic-bezier(.39,.575,.565,1)
+}
+
+@media screen and (min-width: 750px) {
+    main-menu .main-menu .menu .menu-title {
+        font-size:2.1875rem
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main-menu .main-menu .menu .menu-title {
+        font-size:2.8125rem;
+        color: #6d6d6d
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main-menu .main-menu .menu .menu-title {
+        font-size:3.4375rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    main-menu .main-menu .menu .menu-title {
+        font-size:4.0625rem
+    }
+}
+
+main-menu .main-menu .menu .menu-sub-title {
+    position: relative;
+    margin-top: .75em;
+    color: #fff;
+    font-size: 1.0625rem;
+    white-space: nowrap
+}
+
+main-menu .main-menu .menu .menu-sub-title:before {
+    content: '';
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    width: 130%;
+    height: 150%;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: .35s cubic-bezier(.39,.575,.565,1)
+}
+
+@media screen and (min-width: 750px) {
+    main-menu .main-menu .menu .menu-sub-title {
+        font-size:1.25rem
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main-menu .main-menu .menu .menu-sub-title {
+        font-size:1.5rem;
+        color: #6d6d6d
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main-menu .main-menu .menu .menu-sub-title {
+        font-size:1.75rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    main-menu .main-menu .menu .menu-sub-title {
+        font-size:1.875rem
+    }
+}
+
+main-menu .main-menu .menu .menu-content {
+    margin-top: 1.875rem;
+    text-align: center
+}
+
+main-menu .main-menu .menu .menu-content .intro {
+    width: 22.5rem;
+    height: 11.25rem;
+    padding: 2.5em 2em;
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: italic;
+    text-indent: 0;
+    letter-spacing: 0;
+    color: #8a8a8a;
+    line-height: 1.4;
+    background: url(../img/general/menu_text_bg.png) no-repeat 50% 50%/contain
+}
+
+main-menu .main-menu .menu .menu-content .link {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    top: auto;
+    bottom: -.3em;
+    font-size: 1.25rem;
+    color: #fff;
+    display: inline-block;
+    margin: 1.5em 0 0;
+    letter-spacing: .2em
+}
+
+main-menu .main-menu .menu .menu-content .link:before {
+    content: '';
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    width: 150%;
+    height: 250%;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+main-menu .main-menu .menu .menu-content .menu-logo {
+    margin-top: 1.875rem
+}
+
+main-menu .main-menu .menu .menu-content .menu-logo .menu-logo-title {
+    font-family: bebas,sans-serif;
+    letter-spacing: .275em;
+    font-weight: 400;
+    color: #8a8a8a;
+    font-size: .8125rem;
+    margin-bottom: 1.2em
+}
+
+main-menu .main-menu .menu .menu-content .menu-logo svg {
+    width: 5.4rem;
+    height: 3rem
+}
+
+@media screen and (min-width: 1600px) {
+    main-menu .main-menu .menu .menu-content .menu-logo svg {
+        width:9rem;
+        height: 5rem
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:999px) {
+    main-menu .main-menu .menu .menu-content {
+        display:none
+    }
+}
+
+main-menu .main-menu .menu .menu-item-all .menu-title:before {
+    background-image: url(../img/general/japan/menu_swipe.png)
+}
+
+main-menu .main-menu .menu .menu-item-myanmar .menu-title:before {
+    background-image: url(../img/general/myanmar/menu_swipe.png)
+}
+
+main-menu .main-menu .menu .menu-item-vietnam .menu-title:before {
+    background-image: url(../img/general/vietnam/menu_swipe.png)
+}
+
+main-menu .main-menu .menu .menu-item-vietnam .menu-sub-title:before {
+    background-image: url(../img/general/vietnam/menu_swipe.png)
+}
+
+main-menu .main-menu .menu .menu-item-myanmar .menu-content .link:before {
+    background-image: url(../img/general/menu_button.png)
+}
+
+main-menu .main-menu .menu .menu-item-vietnam .menu-content .link:before {
+    background-image: url(../img/general/menu_button.png)
+}
+
+@media screen and (min-width: 0px) and (max-width:999px) {
+    main-menu .main-menu {
+        display:-ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+
+    main-menu .main-menu .menu {
+        top: 7%;
+        height: 80%;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    main-menu .main-menu .menu li {
+        height: 30%
+    }
+
+    main-menu .main-menu .menu .menu-item-map .mini-map-pattern {
+        display: none
+    }
+
+    main-menu .main-menu social-share {
+        position: relative;
+        z-index: 1;
+        height: 16%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        justify-content: space-around
+    }
+
+    main-menu .main-menu social-share li:first-child {
+        display: none
+    }
+}
+
+.no-flexbox main-menu .main-menu .menu {
+    height: 100%
+}
+
+.no-flexbox main-menu .main-menu .menu li {
+    width: 33.3333333333%;
+    height: 100%;
+    float: left
+}
+
+@media screen and (min-width: 1000px) {
+    main-menu .main-menu social-share {
+        display:none
+    }
+
+    main-menu .main-menu .menu {
+        -ms-flex-align: start;
+        align-items: flex-start
+    }
+
+    main-menu .main-menu .menu li {
+        height: 95%
+    }
+
+    main-menu .main-menu .menu .menu-item-container {
+        top: calc(50% + 8.25rem);
+        transform: translate3d(-50%,-50%,0)
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-height:700px) {
+    main-menu .main-menu .menu .menu-item-container {
+        top:60%
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main-menu .main-menu .menu .menu-item-map {
+        left:5%;
+        width: 90%;
+        height: 90%
+    }
+
+    main-menu .main-menu .menu .menu-item-map .mini-map {
+        transition: .35s cubic-bezier(.39,.575,.565,1);
+        -ms-transform: scale(.6);
+        transform: scale(.6);
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%
+    }
+
+    main-menu .main-menu .menu .menu-item-map .mini-map-pattern {
+        opacity: 0
+    }
+
+    main-menu .main-menu .menu hgroup {
+        transition: .35s cubic-bezier(.39,.575,.565,1);
+        -ms-transform: scale(.75);
+        transform: scale(.75);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden
+    }
+
+    main-menu .main-menu .menu hgroup>:before {
+        opacity: 0
+    }
+
+    main-menu .main-menu .menu .menu-content {
+        transition: .35s cubic-bezier(.39,.575,.565,1);
+        opacity: 0
+    }
+
+    main-menu .main-menu .menu .menu-item-all .menu-item-map {
+        width: 110%;
+        left: -5%
+    }
+
+    main-menu .main-menu .menu .menu-item-myanmar .menu-item-map {
+        top: 3%
+    }
+
+    main-menu .main-menu .menu li a:hover .menu-item-map svg,main-menu .main-menu .menu li a.selected .menu-item-map svg {
+        opacity: .15
+    }
+
+    main-menu .main-menu .menu li a:hover .menu-item-map .mini-map,main-menu .main-menu .menu li a.selected .menu-item-map .mini-map {
+        -ms-transform: scale(.85);
+        transform: scale(.85)
+    }
+
+    main-menu .main-menu .menu li a:hover .menu-item-map .mini-map-pattern,main-menu .main-menu .menu li a.selected .menu-item-map .mini-map-pattern {
+        opacity: 1
+    }
+
+    main-menu .main-menu .menu li a:hover hgroup,main-menu .main-menu .menu li a.selected hgroup {
+        color: #fff;
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+
+    main-menu .main-menu .menu li a:hover hgroup>*,main-menu .main-menu .menu li a.selected hgroup>* {
+        color: #fff
+    }
+
+    main-menu .main-menu .menu li a:hover hgroup>:before,main-menu .main-menu .menu li a.selected hgroup>:before {
+        opacity: 1
+    }
+
+    main-menu .main-menu .menu li a:hover .menu-content,main-menu .main-menu .menu li a.selected .menu-content {
+        opacity: 1
+    }
+}
+
+.main-menu-patterns {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0
+}
+
+.page-home {
+    position: relative
+}
+
+.page-home .video-container video,.page-home .video-container img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    min-width: 100%;
+    min-height: 100%
+}
+
+.page-home .video-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(0,0,0,.5) 0,transparent 20%,transparent 50%,transparent 80%,rgba(0,0,0,.5) 100%)
+}
+
+.page-home .video-container:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7) url(../videos/video_overlay_texture.png);
+    opacity: .5
+}
+
+.page-home .titles {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    top: calc(50% - 1rem);
+    z-index: 2;
+    font-size: 5.3125rem;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.page-home .titles .title-sub {
+    font-family: bebas,sans-serif;
+    letter-spacing: .275em;
+    font-weight: 400;
+    margin-bottom: .05em;
+    font-size: .245em;
+    letter-spacing: .35em
+}
+
+.page-home .titles .title-main {
+    position: relative;
+    font-family: playfair,sans-serif;
+    text-indent: .26em;
+    font-weight: 400;
+    letter-spacing: .13em;
+    font-size: 1em;
+    white-space: nowrap
+}
+
+.country-myanmar .page-home .titles .title-main {
+    letter-spacing: .1em
+}
+
+.country-vietnam .page-home .titles .title-main {
+    font-size: .8em
+}
+
+.country-vietnam .page-home .titles .title-main .sub-text {
+    display: block;
+    font-size: .25em;
+    text-indent: 1.4em
+}
+
+.page-home .titles .title-main .text {
+    display: block
+}
+
+.page-home .titles .title-main .animation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transform: translateZ(0)
+}
+
+.page-home .titles .title-main .animation-brush1 {
+    position: absolute;
+    width: 93%;
+    top: 9%;
+    left: 0;
+    z-index: -1
+}
+
+.page-home .titles .title-main .animation-brush1 .animation-container {
+    padding-bottom: 16.875%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain
+}
+
+.country-all .page-home .titles .title-main .animation-brush1 .animation-container {
+    background-image: url(../img/general/japan/title_brush1.png)
+}
+
+.country-myanmar .page-home .titles .title-main .animation-brush1 .animation-container {
+    background-image: url(../img/general/myanmar/title_brush1.png)
+}
+
+.country-vietnam .page-home .titles .title-main .animation-brush1 .animation-container {
+    background-image: url(../img/general/vietnam/title_brush1.png)
+}
+
+@media screen and (min-width: 1200px) {
+    .page-home .titles .title-main .animation-brush1 .animation-container {
+        background:none!important
+    }
+}
+
+.page-home .titles .title-main .animation-brush2 {
+    position: absolute;
+    width: 86.7%;
+    top: 56.5%;
+    left: 8%;
+    z-index: 1
+}
+
+.page-home .titles .title-main .animation-brush2 .animation-container {
+    padding-bottom: 7.96812749%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain
+}
+
+.country-all .page-home .titles .title-main .animation-brush2 .animation-container {
+    background-image: url(../img/general/japan/title_brush2.png)
+}
+
+.country-myanmar .page-home .titles .title-main .animation-brush2 .animation-container {
+    background-image: url(../img/general/myanmar/title_brush2.png)
+}
+
+.country-vietnam .page-home .titles .title-main .animation-brush2 .animation-container {
+    padding-bottom: 5.577689243%;
+    background-image: url(../img/general/vietnam/title_brush2.png)
+}
+
+@media screen and (min-width: 1200px) {
+    .page-home .titles .title-main .animation-brush2 .animation-container {
+        background:none!important
+    }
+}
+
+.country-myanmar .page-home .titles .title-main .animation-brush2 {
+    top: 59.4%
+}
+
+.country-vietnam .page-home .titles .title-main .animation-brush2 {
+    top: 64.3%
+}
+
+.page-home .titles .title-main .animation-brush3 {
+    position: absolute;
+    width: 83%;
+    top: 82%;
+    left: 3%;
+    z-index: -1
+}
+
+.page-home .titles .title-main .animation-brush3 .animation-container {
+    padding-bottom: 12.5874125874%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain
+}
+
+.country-all .page-home .titles .title-main .animation-brush3 .animation-container {
+    background-image: url(../img/general/japan/title_brush3.png)
+}
+
+.country-myanmar .page-home .titles .title-main .animation-brush3 .animation-container {
+    background-image: url(../img/general/myanmar/title_brush3.png)
+}
+
+.country-vietnam .page-home .titles .title-main .animation-brush3 .animation-container {
+    background-image: url(../img/general/vietnam/title_brush3.png)
+}
+
+@media screen and (min-width: 1200px) {
+    .page-home .titles .title-main .animation-brush3 .animation-container {
+        background:none!important
+    }
+}
+
+.page-home .titles .title-main .animation-image {
+    position: absolute;
+    width: 100%;
+    height: auto
+}
+
+@media screen and (min-width: 750px) {
+    .page-home .titles {
+        font-size:10rem
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-home .titles {
+        font-size:12.8125rem
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .page-home .titles {
+        font-size:15.625rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .page-home .titles {
+        font-size:18.75rem
+    }
+}
+
+.page-home step-inside {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    top: auto;
+    bottom: 15%;
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .875rem;
+    letter-spacing: .45em;
+    text-indent: .45em;
+    font-weight: 700;
+    padding: .5em 1em;
+    white-space: nowrap
+}
+
+.page-home step-inside a {
+    position: relative;
+    display: block
+}
+
+.page-home step-inside .animation-container {
+    position: absolute;
+    left: -5%;
+    top: -50%;
+    z-index: -1;
+    width: 110%;
+    height: 0;
+    padding-bottom: 8.1081081081%;
+    overflow: hidden
+}
+
+.page-home step-inside .animation-image {
+    position: absolute;
+    width: 100%;
+    height: auto
+}
+
+@media screen and (min-width: 350px) {
+    .page-home step-inside {
+        font-size:1rem
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .page-home step-inside {
+        font-size:1.25rem
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .page-home step-inside {
+        font-size:1.375rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .page-home step-inside {
+        font-size:1.5rem
+    }
+}
+
+.page-home .passport-stamp {
+    position: absolute;
+    right: -2%;
+    bottom: -1%;
+    z-index: 3;
+    width: 15%;
+    min-width: 125px;
+    max-width: 225px;
+    opacity: .85
+}
+
+.country-all .page-home .passport-stamp {
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    right: -2%;
+    bottom: -1%
+}
+
+.country-myanmar .page-home .passport-stamp {
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    right: -1%;
+    bottom: 5%
+}
+
+.country-vietnam .page-home .passport-stamp {
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    right: -1.5%;
+    bottom: 1%
+}
+
+.page-home .country-select {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 80%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 9
+}
+
+.page-home .country-select a {
+    font-size: 2rem;
+    letter-spacing: .35em;
+    transition: color .35s cubic-bezier(.39,.575,.565,1)
+}
+
+.page-home .country-select a:hover {
+    color: #ee3124
+}
+
+.page-location .location-title {
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.875rem;
+    color: #fff
+}
+
+.page-location .location-title span {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: .175em;
+    text-align: center;
+    margin: auto;
+    max-width: 75%;
+    text-shadow: 0 0 75px rgba(0,0,0,.75)
+}
+
+.page-location .location-title span:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: .35em;
+    background: url(../img/general/title_underline.png) no-repeat 50% 50%/100% 100%
+}
+
+@media screen and (min-width: 750px) {
+    .page-location .location-title {
+        font-size:2.375rem
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-location .location-title {
+        font-size:2.8125rem
+    }
+}
+
+.page-location #street-view {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%
+}
+
+.page-location .map-wrapper {
+    display: none;
+    position: absolute;
+    right: 1.875rem;
+    bottom: 10%;
+    z-index: 2;
+    font-size: 10.9375rem;
+    width: 1em;
+    height: 1.08em
+}
+
+.page-location .map-wrapper:before,.page-location .map-wrapper:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 4.9019607843%;
+    background: url(../img/general/navigator_scroll.png) no-repeat 50% 0/contain
+}
+
+.page-location .map-wrapper:before {
+    top: 0
+}
+
+.page-location .map-wrapper:after {
+    bottom: 0;
+    transform: rotateX(180deg)
+}
+
+.page-location .map-wrapper #mini-map {
+    position: absolute;
+    left: 4.7619047619%;
+    right: 4.7619047619%;
+    bottom: 1.9607843137%;
+    top: 1.9607843137%;
+    z-index: 1
+}
+
+@media screen and (min-width: 750px) {
+    .page-location .map-wrapper {
+        display:block
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-location .map-wrapper {
+        font-size:13.125rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .page-location .map-wrapper {
+        font-size:15.625rem
+    }
+}
+
+body[class*=map] header,body[class*=map] footer {
+    pointer-events: none
+}
+
+body[class*=map] header>*,body[class*=map] footer>* {
+    pointer-events: auto
+}
+
+body[class*=map].touchscreen .iat-app {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+#map {
+    width: 500%;
+    height: 500%;
+    left: -200%;
+    top: -200%;
+    overflow: visible;
+    cursor: move;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.touchscreen #map {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    background: none
+}
+
+.touchscreen #map .land-layer .land-wrapper {
+    left: 0;
+    top: 0;
+    -ms-transform: translate(0,0);
+    transform: translate(0,0)
+}
+
+#map .ocean-layer {
+    z-index: 1
+}
+
+.country-all #map .ocean-layer {
+    background: url(../img/general/japan/wave_pattern.jpg);
+    background-size: 150px 150px
+}
+
+.country-myanmar #map .ocean-layer {
+    background: url(../img/general/myanmar/wave_pattern.jpg);
+    background-size: 127.5px 127.5px
+}
+
+.country-vietnam #map .ocean-layer {
+    background: url(../img/general/vietnam/wave_pattern.jpg);
+    background-size: 187.5px 187.5px
+}
+
+#map .ocean-layer #ocean-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0)
+}
+
+.touchscreen #map .ocean-layer {
+    display: none;
+    background: none
+}
+
+#map #land-image {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0)
+}
+
+#map #land-image>div {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0)
+}
+
+#map #land-image>div img {
+    width: 100%;
+    height: 100%
+}
+
+#map #land-image>div:nth-child(2) {
+    top: 0;
+    left: 0
+}
+
+#map #land-image>div:nth-child(3) {
+    top: 0;
+    left: 50%
+}
+
+#map #land-image>div:nth-child(4) {
+    top: 50%;
+    left: 0
+}
+
+#map #land-image>div:nth-child(5) {
+    top: 50%;
+    left: 50%
+}
+
+#map .land-layer {
+    z-index: 2;
+    text-align: center;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+}
+
+#map .land-layer .land-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+#map .marker-layer {
+    z-index: 4;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0)
+}
+
+#map .marker-layer .marker {
+    position: absolute;
+    z-index: 3;
+    transform: translate3d(-50%,-50%,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+#map .marker-layer .marker:hover {
+    z-index: 5
+}
+
+#map .marker-layer .marker .animation-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+#map .marker-layer .marker .animation-image {
+    position: absolute;
+    width: 100%;
+    height: auto
+}
+
+.touchscreen #map .marker-layer .marker {
+    padding-bottom: .5%;
+    -ms-transform: translate(-50%,-40%);
+    transform: translate(-50%,-40%)
+}
+
+#map .scroll-animation {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: calc(100% - 20px);
+    transform: translate3d(-50%,0,0)
+}
+
+#map .scroll-animation .scroll-animation-wrapper {
+    overflow: hidden
+}
+
+#map .scroll-animation .scroll-animation-bar {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    height: 6px;
+    border-radius: 0 0 45% 45%;
+    opacity: 0;
+    visibility: hidden
+}
+
+#map .scroll-animation .scroll-animation-bar:before,#map .scroll-animation .scroll-animation-bar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain
+}
+
+.country-all #map .scroll-animation .scroll-animation-bar:before,.country-all #map .scroll-animation .scroll-animation-bar:after {
+    width: 12px;
+    height: 10px;
+    background-image: url(../img/general/japan/scroll_curly.png)
+}
+
+.country-myanmar #map .scroll-animation .scroll-animation-bar:before,.country-myanmar #map .scroll-animation .scroll-animation-bar:after {
+    width: 14px;
+    height: 15px;
+    top: -7px;
+    background-image: url(../img/general/myanmar/scroll_curly.png)
+}
+
+.country-vietnam #map .scroll-animation .scroll-animation-bar:before,.country-vietnam #map .scroll-animation .scroll-animation-bar:after {
+    width: 17px;
+    height: 19px;
+    top: -10px;
+    background-image: url(../img/general/vietnam/scroll_curly.png)
+}
+
+.country-all #map .scroll-animation .scroll-animation-bar {
+    background: #af1108;
+    box-shadow: 0 3px 0 #7d1108,0 7px 0 rgba(0,0,0,.25)
+}
+
+.country-myanmar #map .scroll-animation .scroll-animation-bar {
+    background: #692e36;
+    box-shadow: 0 3px 0 #280a16,0 7px 0 rgba(0,0,0,.25)
+}
+
+.country-vietnam #map .scroll-animation .scroll-animation-bar {
+    background: #007355;
+    box-shadow: 0 3px 0 #003721,0 7px 0 rgba(0,0,0,.25)
+}
+
+#map .scroll-animation .scroll-animation-bar:before {
+    left: -11px
+}
+
+#map .scroll-animation .scroll-animation-bar:after {
+    right: -11px;
+    transform: rotateY(180deg)
+}
+
+#map .scroll-animation .scroll-animation-bar-top {
+    width: calc(100% - 24px);
+    top: 0
+}
+
+#map .scroll-animation .scroll-animation-bar-bottom {
+    width: calc(100% + 10px);
+    bottom: 0
+}
+
+#map .scroll-animation .scroll-animation-middle {
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    position: relative;
+    z-index: 1;
+    margin: 0 17px;
+    padding: 1.125rem .75rem .75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .875rem;
+    background: url(../img/general/scroll_bg.jpg) no-repeat 0 0/cover;
+    white-space: nowrap
+}
+
+.country-all #map .scroll-animation .scroll-animation-middle {
+    color: #4c0a22
+}
+
+.country-myanmar #map .scroll-animation .scroll-animation-middle {
+    color: #e14508
+}
+
+.country-vietnam #map .scroll-animation .scroll-animation-middle {
+    color: #de4508
+}
+
+.touchscreen #map .scroll-animation {
+    display: none
+}
+
+#map .objects-layer {
+    z-index: 3;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0)
+}
+
+#map .objects-layer .object {
+    position: absolute;
+    transform: translate3d(-50%,-50%,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+#map .objects-layer .object .animation-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+#map .objects-layer .object .animation-image {
+    position: absolute;
+    width: 100%;
+    height: auto
+}
+
+.touchscreen #map .objects-layer .object {
+    display: none
+}
+
+map-navigator {
+    position: absolute;
+    right: 1.875rem;
+    bottom: 10%;
+    z-index: 2;
+    font-size: 15.625rem;
+    width: 1em;
+    height: 1.08em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    pointer-events: none
+}
+
+.country-all map-navigator {
+    background-image: url(../img/general/japan/navigator.png)
+}
+
+.country-myanmar map-navigator {
+    background-image: url(../img/general/myanmar/navigator.png)
+}
+
+.country-vietnam map-navigator {
+    height: 1.325em;
+    background-image: url(../img/general/vietnam/navigator.png)
+}
+
+map-navigator .map-navigator-marker-wrapper {
+    position: absolute
+}
+
+.country-all map-navigator .map-navigator-marker-wrapper {
+    left: 5.0264550265%;
+    right: 5.0264550265%;
+    bottom: 2.9411764706%;
+    top: 2.9411764706%
+}
+
+.country-myanmar map-navigator .map-navigator-marker-wrapper {
+    left: 5.0264550265%;
+    right: 5.0264550265%;
+    bottom: 5.1470588235%;
+    top: 5.1470588235%
+}
+
+.country-vietnam map-navigator .map-navigator-marker-wrapper {
+    left: 6.5625%;
+    right: 6.5625%;
+    bottom: 4.9528301887%;
+    top: 4.9528301887%
+}
+
+map-navigator .map-navigator-marker {
+    position: absolute;
+    border: 2px solid #b20e0c
+}
+
+.touchscreen map-navigator {
+    display: none
+}
+
+
+.contenedor1a {
+    width: max-content;
+    /* height: 180px; */
+    position: initial;
+    /* left: 51%; */
+    /* top: 80%; */
+    /* transform: translate(-21%, -41%); */
+    z-index: 99999;
+}
+
+.botonF1a {
+  width: auto;
+  height: 49px;
+  border-radius: 40px;
+  /* background:#fff909; */
+  background: #ffe594;
+  /* right: 0; */
+  bottom: 0;
+  /* position: absolute; */
+  /* margin-right: 13px; */
+  margin-bottom: 16px;
+  border: none;
+  outline: none;
+  color: #f5803e;
+  font-size: 28px;
+  font-family: system-ui;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  /* transition: .3s; */
+  /*z-index: 333;
+            */
+  padding: 0px 40px 0px 40px;
+}
