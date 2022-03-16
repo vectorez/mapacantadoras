@@ -1,5 +1,5 @@
 /*
- * Apollo - Sticky Full Width HTML5 Audio Player - v3.6
+ * 2121212
  *
  * Copyright 2017-2021, LambertGroup
  *

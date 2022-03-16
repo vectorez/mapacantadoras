@@ -383,7 +383,7 @@ $(document).ready(function () {
       lyricsButTarget: "_blank",
       showFacebookBut: false,
       facebookAppID: "",
-      facebookShareTitle: "Apollo - HTML5 Audio Player",
+      facebookShareTitle: "2121212",
       facebookShareDescription: "A top-notch sticky full width HTML5 Audio Player compatible with all major browsers and mobile devices.",
       showTwitterBut: false,
       showPopupBut: false,
